@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p input db \"rounds/과제_1\")",
+      "Bash(mv grades.xlsx input/)",
+      "Bash(mv grades.db db/)",
+      "Bash(mv template_과제_1.xlsx \"rounds/과제_1/\")",
+      "Bash(mv lms_과제_1.xlsx \"rounds/과제_1/\")"
+    ]
+  }
+}
