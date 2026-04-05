@@ -84,19 +84,13 @@ openpyxl
 
 ## CLI 명령어
 
-### 초기 설정 (학기 초 1회)
-
-```bash
-# DB 테이블 생성
-uv run main.py init
-
-# 수강생 명단 등록 (input/grades.xlsx의 "수강생" 시트)
-uv run main.py import-students
-```
-
 ### 평가별 워크플로우
 
 ```bash
+# 0. 학기 초 1회 — DB 초기화 및 수강생 등록
+uv run main.py init
+uv run main.py import-students
+
 # 1. 문제정보 등록 (채점 전)
 uv run main.py import-problems
 
